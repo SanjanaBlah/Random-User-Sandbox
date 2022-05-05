@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Project</title>
+</head>
+
+<body>
+  <!-- NAVBAR SECTION-->
+  <div class="navbar">
+    <h1 id="greeting">The personalized greeting goes here!</h1>
+  </div>
+
+  <!-- main CONTAINER-->
+  <div class="main">
+    <!-- No Of Users Drop-down -->
+    <div class="users_count">
+      <label for="people-count">How many users do you wish to see?</label> <br />
+      <input id="people-count" type="number" value="20" min="0" />
+    </div>
+
+    <!-- Person Cards -->
+    <div class="cards_section-container">
+      <div id="person-cards" class="cards_section"> </div>
+    </div>
+
+    <!-- Filter Data Section -->
+    <div class="filter_section">
+      <span>
+        <label for="data">Filter Data&nbsp;</label>
+        <img src="./assets/img/down-arrow.png" alt="select" class="dropdown-arrow">
+      </span>
+
+      <!-- Option Buttons -->
+      <div class="opt_btn_grp">
+        <button id="filter-show-all">Show all</button>
+        <button id="filter-show-male">Show only Male</button>
+        <button id="filter-show-female">Show only Female</button>
+        <button id="filter-sort-first-name">Sort by first name</button>
+        <button id="filter-sort-last-name">Sort by last name</button>
+        <button id="filter-sort-age">Sort by Age</button>
+        <button id="filter-sort-city">Sort by City</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

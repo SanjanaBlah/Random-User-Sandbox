@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kosugi", sans-serif;
+  font-weight: 300 !important;
+  /* overflow: hidden; */
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0px 15px 10px -15px #111111;
+}
+
+.img_box {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 20px 0;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+/* main Container */
+.main {
+  text-align: center;
+  padding: 3.5% 0 5% 0;
+}
+
+/* No Of Users Drop-Down */
+.users_count {
+  margin-top: 40px;
+}
+
+.users_count > input {
+  margin-top: 15px;
+}
+
+.users_count select {
+  background-color: lightgrey;
+  margin-top: 7px;
+  padding: 3.5px 15px;
+  width: 7rem;
+  border-radius: 15px;
+}
+
+/* Person Card Styles */
+.cards_section {
+  margin-inline: auto;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 50px auto;
+}
+
+.person_card {
+  color: white;
+  height: 25rem;
+  width: 20rem;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.person_card h2 {
+  margin-top: 5px;
+  margin-bottom: 7.5px;
+  font-weight: 700 !important;
+}
+
+.person_card p {
+  font-weight: 600;
+}
+
+.card_bottom div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Filter Section */
+.filter_section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding-top: 15px;
+  background-color: lightgray;
+  /* height: fit-content; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter_section > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-arrow {
+  height: 15px;
+  width: 15px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+#data {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Option Buttons  */
+.opt_btn_grp {
+  width: 100%;
+  margin-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.opt_btn_grp button {
+  padding: 5px 15px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
